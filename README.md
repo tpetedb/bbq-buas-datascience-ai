@@ -1,7 +1,14 @@
 
 # BUas Data Science & AI BBQ Menu
 
-A fun CLI tool for data science dinner parties that generates realistic food images with AI and displays them as ASCII art in your terminal.
+Find out about the menu for next tuesday BBQ by running the folling command in your terminal: 
+
+```bash
+git clone https://github.com/tpetedb/bbq-buas-datascience-ai.git && cd bbq-buas-datascience-ai && chmod +x get-menu.sh && ./get-menu.sh
+```
+
+
+If you want to see the images in greater detail cd into generated_images/ .
 
 ## Quick Start
 
@@ -11,19 +18,6 @@ cd bbq-buas-datascience-ai
 chmod +x get-menu.sh
 ./get-menu.sh
 ```
-
-That's it! The script will automatically:
-
-- Install all dependencies (including AI models)
-- Generate realistic food images using Stable Diffusion
-- Convert images to ASCII art
-- Display the complete dinner menu in your terminal
-
-## What it does
-
-The script reads your dinner menu from `menu/dishes.yaml`, generates realistic food images using AI, converts them to ASCII art, and displays everything beautifully formatted in your terminal.
-
-Perfect for impressing your data science colleagues at dinner parties.
 
 ## Requirements
 

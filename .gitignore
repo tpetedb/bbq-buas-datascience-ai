@@ -29,6 +29,11 @@ venv/
 ENV/
 env/
 .env
+**build/
+**dist/
+**.eggs/
+**.venv/
+**.env/
 
 # AI Models and Cache
 .cache/
