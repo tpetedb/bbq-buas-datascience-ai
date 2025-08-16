@@ -1,0 +1,101 @@
+version: 1.0.0
+menu_title: "BUas Data Science & AI BBQ — Dinner Menu"
+menu_subtitle: "because semantic versioning also applies to food"
+
+sections:
+  - key: mezze
+    title: "Mezze"
+    subtitle: "Streaming pipeline into landing bucket"
+    notes:
+      - "Partitioned evenly across the table to prevent hot spots."
+      - "Use frequent checkpoints to avoid data skew and hunger-induced downtime."
+    items:
+      - key: surprise_mezze
+        name: "Surprise Mezze Platter"
+        short: "Rotating selection of dips, pickles, and small bites."
+        tags: [mezze, streaming, landing]
+        ascii_template: MEZZE
+        image_prompt: >-
+          A modern Levantine mezze spread with small bowls of hummus, pickles,
+          olives, and warm flatbread on a wooden table, overhead view, soft
+          light, minimal styling.
+
+  - key: starters
+    title: "Starters & Dips"
+    subtitle: "Bronze layer metadata"
+    items:
+      - key: hummus_bil_lahme
+        name: "Hummus bil Lahme"
+        short: >-
+          Chickpea dataset transformed with beef embeddings, pine nut tokens,
+          and pomegranate molasses.
+        tags: [starter, dip, bronze]
+        ascii_template: HUMMUS
+        ingredients: [chickpeas, lemon, tahini, garlic, olive oil, beef, pine nuts, cumin, aleppo, pomegranate, pomegranate molasses]
+        image_prompt: >-
+          Creamy hummus topped with spiced beef, pine nuts, mint, and pomegranate
+          arils; drizzle of pomegranate molasses; served with flatbread.
+
+      - key: mtabbal
+        name: "Mtabbal"
+        short: >-
+          Smoky eggplant payload with tahini, lemon, and cumin seeds; garnish of
+          pomegranate for interpretability.
+        tags: [starter, dip, bronze]
+        ascii_template: EGGPLANT
+        ingredients: [eggplant, tahini, lemon, garlic, olive oil, coriander seed, cumin seed, pomegranate]
+        image_prompt: >-
+          Charred eggplant dip with tahini swirl, olive oil puddles, and
+          pomegranate seeds; rustic bowl; overhead.
+
+  - key: bread
+    title: "Bread"
+    subtitle: "Data shuffling & load balancers"
+    items:
+      - key: manakish
+        name: "Manakish"
+        short: >-
+          Za’atar flatbread — acts like a shuffle key ensuring fair distribution
+          across partitions. Caches well, reheats fast.
+        tags: [bread, load-balancer]
+        ascii_template: BREAD
+        ingredients: [flour, water, yogurt, sugar, salt, yeast, za'atar]
+        image_prompt: >-
+          Golden manakish flatbread with za'atar topping; slightly blistered
+          crust; on baking paper; top-down.
+
+  - key: mains
+    title: "Main"
+    subtitle: "Heavy compute layer — Silver/Gold transformations"
+    items:
+      - key: mixed_kebab
+        name: "Mixed Kebab Selection"
+        short: >-
+          Distributed batch job of skewers (lamb kofta, chicken, beef) optimized
+          on a hot cluster (the grill) with parallel processing.
+        tags: [main, grill, silver, gold]
+        ascii_template: KEBAB
+        image_prompt: >-
+          Mixed grill platter with lamb kofta, chicken shish, and beef skewers,
+          char marks visible; served with herbs and flatbread; side lighting.
+
+  - key: share
+    title: "To Share"
+    subtitle: "Replicated storage layer"
+    items:
+      - key: share_set
+        name: "Flatbreads & Fresh Herbs"
+        short: >-
+          Flatbreads, herbs, and olive oil — replicated across nodes (tables) for
+          strong consistency.
+        tags: [share, replicated]
+        ascii_template: SHARE
+        image_prompt: >-
+          Warm flatbreads stacked with a bowl of olive oil and a bunch of fresh
+          mint and parsley; casual table setting.
+
+notes:
+  - "All jobs tested directly on prod (my kitchen). No dev/staging environment available."
+  - "Datasets (ingredients) are not guaranteed to be balanced — some variance expected."
+  - "Any pipeline failures will be rolled back into dessert."
+  - "Bugs served medium-rare — retry logic optional."

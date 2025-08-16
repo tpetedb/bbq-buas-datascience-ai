@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "buas-data"
+version = "2.0.0"
+description = "BUas Data Science & AI BBQ menu printer with ASCII rendering and AI image generation"
+authors = [{name = "Tom Peters"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "PyYAML>=6.0",
+  "diffusers>=0.21.0",
+  "transformers>=4.21.0",
+  "accelerate>=0.20.0",
+  "torch>=2.0.0",
+  "torchvision>=0.15.0",
+  "Pillow>=9.0.0",
+  "numpy>=1.21.0",
+  "rich>=13.0.0",
+]
+
+[project.scripts]
+buas-menu = "buas_data.print_menu:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["buas_data*"]
